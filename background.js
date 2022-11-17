@@ -1,4 +1,16 @@
 const dictionaries = {
+	cdict: {
+		name: 'cdict字典',
+		query: text => `https://cdict.net/?q=${text}`
+	},
+	cambridge {
+		name: 'cambridge_dictionary',
+		query: text => `https://dictionary.cambridge.org/us/dictionary/english-chinese-traditional/${text}`
+	},
+	merriam_webster: {
+		name: 'merriam_webster_dict',
+		query: text => `https://www.merriam-webster.com/dictionary/${text}`
+	},	
 	kimo: {
 		name: '奇摩字典',
 		query: text => `http://tw.dictionary.yahoo.com/dictionary?p=${text}`
